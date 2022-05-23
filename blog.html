@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="blog.js"></script>
+    <link rel="stylesheet" href="blog.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img width="30" height="30" src="https://cdn.pixabay.com/photo/2014/04/02/10/47/red-304573__340.png" alt="">
+            </a>
+            <!-- przycisk wskazujacy burger -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a href="" aria-current="page" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Artykuły</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sklep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+                <form action="" class="d-flex">
+                    <input type="search" placeholder="Szukaj" aria-label="Szukaj" class="form-control mr-2">
+                    <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="topCarousel" data-ride="carousel" class="mt-3 carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#topCarousel" data-slide-to="0"></li>
+                <li data-target="#topCarousel" data-slide-to="1"></li>
+                <li data-target="#topCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item rounded ad1 active">
+                    <div class="carousel-caption text-light">
+                        <h3>Gdzie wyjechać na wakacje?</h3>
+                    </div>
+                </div>
+                <div class="carousel-item rounded ad2">
+                    <div class="carousel-caption text-light">
+                        <h4>Jak zaplanować podróż?</h4>
+                        <p>Miejsca, bilety, wydatki.</p>
+                        <div class="data-caption d-none d-sm-block">
+                            20 luty
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item rounded ad3">
+                    <div class="carousel-caption text-light">
+                        <h3>Życie nad jeziorem</h3>
+                    </div>
+                </div>
+            </div>
+            <a href="#topCarousel" type="button" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">poprzedni</span>
+            </a>
+            <a href="#topCarousel" type="button" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">następny</span>
+            </a>
+        </div>
+    </div>
+
+
+    <main class="container">
+        <div class="row mt-3">
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2020/03/30/17/15/funes-4984899__480.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Karta 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, soluta.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/28/14/56/dolomites-2897227__340.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Karta 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, soluta.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/05/17/37/mountains-4743678__480.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Karta 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, soluta.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mt-5 mb-5">
+                <div class="blog-post">
+                    <img src="https://cdn.pixabay.com/photo/2019/10/26/21/27/mountains-4580418__340.jpg" 
+                    alt="" class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Przykładowy post</h2>
+                    <p class="blog-post-date">20 kwietnia <a href="#">Adam</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Cupiditate voluptates,</strong> veniam alias reprehenderit optio magni esse deleniti amet iusto quas?</p>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo accusamus repellat quaerat minima optio nisi quia. Qui non, unde eaque inventore, beatae obcaecati libero explicabo doloremque aperiam maiores itaque!</p>
+                    <h5>Podtytuł</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, dolore.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore cumque iusto tempora eligendi magnam sint excepturi voluptates veritatis rerum?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore cumque iusto tempora eligendi magnam sint excepturi voluptates veritatis rerum?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore cumque iusto tempora eligendi magnam sint excepturi voluptates veritatis rerum?</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aperiam quo voluptatibus eos! Ratione doloremque enim magnam deleniti dolorum dolore! Illum vero, voluptatem minima dolores magni aliquam laborum accusantium ipsam eveniet possimus nam at optio sapiente sunt rem vel facere?</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam ex mollitia eos vel fugit quos architecto velit omnis nesciunt.</p>
+                </div>
+
+                <div class="blog-post mt-5">
+                    <img src="https://cdn.pixabay.com/photo/2020/02/05/09/57/namibia-4820682__340.jpg" 
+                    alt="" class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Przykładowy post</h2>
+                    <p class="blog-post-date">18 kwietnia <a href="#">Marian</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Cupiditate voluptates,</strong> veniam alias reprehenderit optio magni esse deleniti amet iusto quas?</p>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo accusamus repellat quaerat minima optio nisi quia. Qui non, unde eaque inventore, beatae obcaecati libero explicabo doloremque aperiam maiores itaque!</p>
+                    <h5>Podtytuł</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, dolore.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore cumque iusto tempora eligendi magnam sint excepturi voluptates veritatis rerum?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore cumque iusto tempora eligendi magnam sint excepturi voluptates veritatis rerum?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore cumque iusto tempora eligendi magnam sint excepturi voluptates veritatis rerum?</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aperiam quo voluptatibus eos! Ratione doloremque enim magnam deleniti dolorum dolore! Illum vero, voluptatem minima dolores magni aliquam laborum accusantium ipsam eveniet possimus nam at optio sapiente sunt rem vel facere?</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam ex mollitia eos vel fugit quos architecto velit omnis nesciunt.</p>
+                </div>
+
+                <!-- paginacja -->
+                <nav class="mt-5" aria-label="Paginacja strony">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a href="#" tabindex="-1" aria-disabled="true" class="page-link">
+                                Poprzednie
+                            </a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link active">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">6</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Kolejne</a></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+            <aside class="col-md-4 mt-5">
+                <!-- sidebar -->
+                <div class="bg-light p-4 mb-3 rounded">
+                    <h4 class="font-italic">O stronie</h4>
+                    <p>Blog o podróżach. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ut incidunt quisquam optio ipsum, odit rem quod nulla necessitatibus nostrum, numquam eveniet ullam deserunt soluta.</p>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-italic">Archiwum</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Styczeń</a></li>
+                        <li><a href="#">Luty</a></li>
+                        <li><a href="#">Marzec</a></li>
+                        <li><a href="#">Kwiecień</a></li>
+                        <li><a href="#">Maj</a></li>
+                        <li><a href="#">Czerwiec</a></li>
+                    </ol>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-italic">Kategorie</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Podróże</a></li>
+                        <li><a href="#">Kulinaria</a></li>
+                        <li><a href="#">Język</a></li>
+                        <li><a href="#">Hobby</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <div id="newsletter-box" class="rounded p-4 mb-3 bg-light">
+            <div class="d-flex justify-content-center align-content-center">
+                <div class="form-box">
+                    <form action="" novalidate class="row g-3 needs-validation">
+                        <div class="col-12">
+                            <!-- <label for="emailInput" class="form-label">Email</label> -->
+                            <input type="text" placeholder="Wpisz email" class="form-control" required id="email">
+                            <div class="valid-feedback">Email prawidłowy!</div>
+                            <div class="invalid-feedback">Wymagane wpisanie maila!</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="agreement" required>
+                                <label for="agreement" class="form-check-label">Zgadzam się z regulaminem</label>
+                                <div class="invalid-feedback">Wymagane zaznaczenie</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary btn-block"
+                               type="submit">
+                                Zapisz mnie na newsletter
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mt-3">
+            <div class="col-sm-6">
+                <div class="border rounded row g-0 overflow-hidden shadow-sm  position-relative">
+                    <div class="col p-4 d-flex flex-column ">
+                       <strong class="mb-2 text-primary">Wyspy</strong>
+                       <h3>Wycieczka</h3>
+                       <div class="mb-1 text-muted">Gru 1</div>
+                       <p class="card-text mb-auto">
+                           Lorem ipsum dolor sit amet consectetur adipiscing elit. Eum earum incidunt facilis quaerat quod? Tenetur, pariatur voluptate!
+                       </p>
+                       <a href="#" class="stretched-link">Czytaj dalej</a>
+                    </div>
+                    <div class="col-auto d-none d-md-block">
+                       <img src="https://cdn.pixabay.com/photo/2017/10/23/22/47/dauphin-island-2882871__480.jpg" width="200" height="250" alt="" class="img-fluid"  >
+                    </div>
+                 </div>
+            </div> 
+            <div class="col-sm-6">
+                <div class="border rounded row g-0 overflow-hidden shadow-sm  position-relative">
+                    <div class="col p-4 d-flex flex-column ">
+                       <strong class="mb-2 text-primary">Wycieczka</strong>
+                       <h3>Podróż</h3>
+                       <div class="mb-1 text-muted">Sty 1</div>
+                       <p class="card-text mb-auto">
+                           Lorem ipsum dolor sit amet consectetur adipiscing elit. Eum earum incidunt facilis quaerat quod? Tenetur, pariatur voluptate!
+                       </p>
+                       <a href="#" class="stretched-link">Czytaj dalej</a>
+                    </div>
+                    <div class="col-auto d-none d-md-block">
+                       <img src="https://cdn.pixabay.com/photo/2017/02/18/08/49/phang-nga-bay-2076833__480.jpg" width="200" height="250" alt="" class="img-fluid"  >
+                    </div>
+                 </div>
+            </div> 
+        </div> 
+    </main>
+    <footer id="footer" class="text-light bg-dark mt-3">
+        <div class="container pt-4">
+            <dov class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Nazwa bloga</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic, minus eaque ad fugit esse impedit unde? Eveniet, eligendi temporibus.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Szybkie linki:</h5>
+                    <ul>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Artykuły</a></li>
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Kontakt</h5>
+                    <p><a href="mailto:admin@example.com">admin@example.com</a></p>
+                    <p>ul. Ogrodowa 0</p>
+                    <p>00-000 Muszyna</p>
+                </div>
+            </dov>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    Copyright by Blog. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+        window.onload = function() {
+            let formElements = document.querySelectorAll(".needs-validation");
+            Array.prototype.slice.call(formElements).forEach(function(form){
+                form.addEventListener('submit', function(event){
+                    if(!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    form.classList.add("was-validated");
+                });
+            });
+        }
+    </script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+ 
+
+     
+</body>
+</html>

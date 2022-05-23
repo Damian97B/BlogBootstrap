@@ -1,0 +1,37 @@
+.carousel-item{
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    background-size: cover;
+}
+.ad1{
+    background: url(https://cdn.pixabay.com/photo/2017/06/11/02/04/panorama-2391345__340.jpg)no-repeat center center;
+}
+.ad2{
+    background: url(https://cdn.pixabay.com/photo/2018/05/14/16/54/alpine-3400788__340.jpg)no-repeat center center;
+}
+.ad3{
+    background: url(https://cdn.pixabay.com/photo/2016/03/11/09/53/panorama-1249998__340.jpg)no-repeat center center;
+}
+/* ekrany mobilne, responsywność carousel*/
+@media(min-width: 576px){
+    .carousel-item{
+        min-height: 17rem;
+    }
+}
+@media(max-width: 576px){
+    .carousel-item{
+        min-height: 12rem;
+    }
+}
+#newsletter-box{
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    background-size: cover;
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/22/16/22/clouds-1473311__340.jpg);
+}
+.form-box{
+    width: 20rem;
+}
+footer a {
+    color: #aaaaab;
+}
